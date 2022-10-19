@@ -103,7 +103,7 @@ p1_part08 <- Dict$new(
   "11" = "Atlantic",
   "12" = "West African Coast"
 )
-t_p1 <- Dict$new(
+t_p1_2d6 <- Dict$new(
   "1939-09" = p1_part01,
   "1939-10" = p1_part01,
   "1939-11" = p1_part01,
@@ -156,8 +156,8 @@ rm(
   p1_part05, p1_part06, p1_part07, p1_part08
 )
 
-## table A1 - aircraft encounter
-t_e1 <- Dict$new(
+## table A1 - encounter chart
+t_e1_2d6 <- Dict$new(
   "Transit" = Dict$new(
     "2" = "Aircraft",
     "3" = "Aircraft",
@@ -315,3 +315,128 @@ t_e1 <- Dict$new(
     "12" = NA
   )
 )
+
+## table U2 - torpedo dud
+u2_part01 <- Dict$new(
+  "1" = TRUE,
+  "2" = TRUE,
+  "3" = FALSE,
+  "4" = FALSE,
+  "5" = FALSE,
+  "6" = FALSE
+)
+u2_part02 <- Dict$new(
+  "1" = TRUE,
+  "2" = FALSE,
+  "3" = FALSE,
+  "4" = FALSE,
+  "5" = FALSE,
+  "6" = FALSE
+)
+u2_part03 <- Dict$new(
+  "1" = TRUE,
+  "2" = TRUE,
+  "3" = TRUE,
+  "4" = FALSE,
+  "5" = FALSE,
+  "6" = FALSE
+)
+t_u2_1d6 <- Dict$new(
+  "G7a" = Dict$new(
+    "1939-09" = u2_part01,
+    "1939-10" = u2_part01,
+    "1939-11" = u2_part01,
+    "1939-12" = u2_part01,
+    "1940-01" = u2_part01,
+    "1940-02" = u2_part01,
+    "1940-03" = u2_part01,
+    "1940-04" = u2_part01,
+    "1940-05" = u2_part01,
+    "1940-06" = u2_part01,
+    "1940-07" = u2_part01,
+    "1940-08" = u2_part01,
+    "1940-09" = u2_part01,
+    "1940-10" = u2_part01,
+    "1940-11" = u2_part01,
+    "1940-12" = u2_part01,
+    "1941-01" = u2_part02,
+    "1941-02" = u2_part02,
+    "1941-03" = u2_part02,
+    "1941-04" = u2_part02,
+    "1941-05" = u2_part02,
+    "1941-06" = u2_part02,
+    "1941-07" = u2_part02,
+    "1941-08" = u2_part02,
+    "1941-09" = u2_part02,
+    "1941-10" = u2_part02,
+    "1941-11" = u2_part02,
+    "1941-12" = u2_part02,
+    "1942-01" = u2_part02,
+    "1942-02" = u2_part02,
+    "1942-03" = u2_part02,
+    "1942-04" = u2_part02,
+    "1942-05" = u2_part02,
+    "1942-06" = u2_part02,
+    "1942-07" = u2_part02,
+    "1942-08" = u2_part02,
+    "1942-09" = u2_part02,
+    "1942-10" = u2_part02,
+    "1942-11" = u2_part02,
+    "1942-12" = u2_part02,
+    "1943-01" = u2_part02,
+    "1943-02" = u2_part02,
+    "1943-03" = u2_part02,
+    "1943-04" = u2_part02,
+    "1943-05" = u2_part02,
+    "1943-06" = u2_part02
+  ),
+  "G7e" = Dict$new(
+    "1939-09" = u2_part03,
+    "1939-10" = u2_part03,
+    "1939-11" = u2_part03,
+    "1939-12" = u2_part03,
+    "1940-01" = u2_part03,
+    "1940-02" = u2_part03,
+    "1940-03" = u2_part03,
+    "1940-04" = u2_part03,
+    "1940-05" = u2_part03,
+    "1940-06" = u2_part03,
+    "1940-07" = u2_part01,
+    "1940-08" = u2_part01,
+    "1940-09" = u2_part01,
+    "1940-10" = u2_part01,
+    "1940-11" = u2_part01,
+    "1940-12" = u2_part01,
+    "1941-01" = u2_part02,
+    "1941-02" = u2_part02,
+    "1941-03" = u2_part02,
+    "1941-04" = u2_part02,
+    "1941-05" = u2_part02,
+    "1941-06" = u2_part02,
+    "1941-07" = u2_part02,
+    "1941-08" = u2_part02,
+    "1941-09" = u2_part02,
+    "1941-10" = u2_part02,
+    "1941-11" = u2_part02,
+    "1941-12" = u2_part02,
+    "1942-01" = u2_part02,
+    "1942-02" = u2_part02,
+    "1942-03" = u2_part02,
+    "1942-04" = u2_part02,
+    "1942-05" = u2_part02,
+    "1942-06" = u2_part02,
+    "1942-07" = u2_part02,
+    "1942-08" = u2_part02,
+    "1942-09" = u2_part02,
+    "1942-10" = u2_part02,
+    "1942-11" = u2_part02,
+    "1942-12" = u2_part02,
+    "1943-01" = u2_part02,
+    "1943-02" = u2_part02,
+    "1943-03" = u2_part02,
+    "1943-04" = u2_part02,
+    "1943-05" = u2_part02,
+    "1943-06" = u2_part02
+  )
+) 
+rm(u2_part01, u2_part02, u2_part03)
