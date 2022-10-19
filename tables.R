@@ -438,5 +438,5 @@ t_u2_1d6 <- Dict$new(
     "1943-05" = u2_part02,
     "1943-06" = u2_part02
   )
-) 
+)
 rm(u2_part01, u2_part02, u2_part03)
