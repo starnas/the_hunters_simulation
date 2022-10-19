@@ -1,5 +1,5 @@
 ## ****************************************************************************
-## # table P1 - patrol assignment
+## # table p1 - patrol assignment
 p1_part01 <- Dict$new(
   "2" = "Spanish Coast",
   "3" = "British Isles",
@@ -158,7 +158,7 @@ rm(
 )
 
 ## ****************************************************************************
-## # table A1 - encounter chart
+## # table e1 - encounter chart
 t_e1_2d6 <- Dict$new(
   "Transit" = Dict$new(
     "2" = "Aircraft",
@@ -319,7 +319,7 @@ t_e1_2d6 <- Dict$new(
 )
 
 ## ****************************************************************************
-## # table U2 - torpedo dud
+## # table u2 - torpedo dud
 u2_part01 <- Dict$new(
   "1" = TRUE,
   "2" = TRUE,
@@ -464,4 +464,113 @@ t_u3_1d6 <- Dict$new(
 )
 
 ## ****************************************************************************
-## # table e3 - escort/air attack
+## # table e3 - escort and air attack
+t_e3_2d6 <- Dict$new(
+  "2" = NA,
+  "3" = NA,
+  "4" = "1",
+  "5" = "1",
+  "6" = "1",
+  "7" = "2",
+  "8" = "2",
+  "9" = "3",
+  "10" = "3",
+  "11" = "4",
+  "12" = "5",
+  "13" = "Sunk"
+)
+
+## ****************************************************************************
+## # table e4a - u-boat damage
+t_e4a_1d61d6 <- Dict$new(
+  "11" = "Batteries",
+  "12" = "Flooding",
+  "13" = "Crew Injury",
+  "14" = "Periscope",
+  "15" = "Dive Planes",
+  "16" = "Electric Engine 1",
+  "21" = "Flooding",
+  "22" = "Electric Engine 2",
+  "23" = "Diesel Engine 1",
+  "24" = "Flak Gun",
+  "25" = "Diesel Engine 2",
+  "26" = "3.7cm Flak",
+  "31" = "Flooding",
+  "32" = "Minor Damage",
+  "33" = "Hull",
+  "34" = "Crew Injury",
+  "35" = "Hull",
+  "36" = "Deck Gun",
+  "41" = "Hull",
+  "42" = "Radio",
+  "43" = "Flooding",
+  "44" = "Flooding",
+  "45" = "Hull",
+  "46" = "2cm Flak",
+  "51" = "Flooding",
+  "52" = "Hull",
+  "53" = "Crew Injury",
+  "54" = "Flooding x2",
+  "55" = "Hull",
+  "56" = "Deck Gun",
+  "61" = "Hydrophones",
+  "62" = "Aft Torpedo Door",
+  "63" = "Crew Injury x2",
+  "64" = "Fwd Torpedo Door",
+  "65" = "Hull x2",
+  "66" = "Fuel Tank"
+)
+t_e4b_2d6 <- Dict$new(
+  "2" = "KMDT",
+  "3" = "1WO",
+  "4" = "Ll",
+  "5" = "Dr",
+  "6" = "Crew 1",
+  "7" = "Crew 2",
+  "8" = "Crew 3",
+  "9" = "Crew 4",
+  "10" = "2WO",
+  "11" = "Ll",
+  "12" = "Abwehr"
+)
+t_e4c_1d6 <- Dict$new(
+  "1" = "LW",
+  "2" = "LW",
+  "3" = "LW",
+  "4" = "SW",
+  "5" = "SW",
+  "6" = "KIA"
+)
+
+## ****************************************************************************
+## # table e5 - u-boat repair
+e5_part01 <- Dict$new(
+  "1" = TRUE,
+  "2" = TRUE,
+  "3" = FALSE,
+  "4" = FALSE,
+  "5" = FALSE,
+  "6" = FALSE
+)
+e5_part02 <- Dict$new(
+  "1" = TRUE,
+  "2" = TRUE,
+  "3" = TRUE,
+  "4" = TRUE,
+  "5" = FALSE,
+  "6" = FALSE
+)
+t_e5_1d6 <- Dict$new(
+  "Flooding" = e5_part02,
+  "Engines" = e5_part02,
+  "Hydrophones" = e5_part01,
+  "Dive Planes" = e5_part01,
+  "Periscope" = e5_part02,
+  "Flak Gun" = e5_part01,
+  "Deck Gun" = e5_part01,
+  "Torpedo Door" = e5_part01,
+  "Fuel Tanks" = e5_part01,
+  "Radio" = e5_part01,
+  "Batteries" = e5_part02
+)
+rm(e5_part01, e5_part02)
