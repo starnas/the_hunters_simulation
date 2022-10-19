@@ -1,4 +1,5 @@
-## table P1 - patrol assignment
+## ****************************************************************************
+## # table P1 - patrol assignment
 p1_part01 <- Dict$new(
   "2" = "Spanish Coast",
   "3" = "British Isles",
@@ -156,7 +157,8 @@ rm(
   p1_part05, p1_part06, p1_part07, p1_part08
 )
 
-## table A1 - encounter chart
+## ****************************************************************************
+## # table A1 - encounter chart
 t_e1_2d6 <- Dict$new(
   "Transit" = Dict$new(
     "2" = "Aircraft",
@@ -316,7 +318,8 @@ t_e1_2d6 <- Dict$new(
   )
 )
 
-## table U2 - torpedo dud
+## ****************************************************************************
+## # table U2 - torpedo dud
 u2_part01 <- Dict$new(
   "1" = TRUE,
   "2" = TRUE,
@@ -440,3 +443,25 @@ t_u2_1d6 <- Dict$new(
   )
 )
 rm(u2_part01, u2_part02, u2_part03)
+
+## ****************************************************************************
+## # table u3 - attack damage
+t_u3_1d6 <- Dict$new(
+  "Torpedo" = Dict$new(
+    "0" = NA,
+    "1" = "4",
+    "2" = "3",
+    "3" = "2",
+    "4" = "1"
+  ),
+  "Deck Gun" = Dict$new(
+    "0" = "2",
+    "1" = "2",
+    "2" = "1",
+    "3" = "1",
+    "4" = "1"
+  )
+)
+
+## ****************************************************************************
+## # table e3 - escort/air attack
