@@ -518,7 +518,7 @@ t_e4a_1d61d6 <- Dict$new(
   "63" = "Crew Injury x2",
   "64" = "Fwd Torpedo Door",
   "65" = "Hull x2",
-  "66" = "Fuel Tank"
+  "66" = "Fuel Tanks"
 )
 t_e4b_2d6 <- Dict$new(
   "2" = "KMDT",
