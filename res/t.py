@@ -1,7 +1,7 @@
+from pprint import pprint
 import yaml
-from yaml.loader import SafeLoader
 
-with open('t.yaml') as f:
-    d = yaml.load(f, Loader = SafeLoader)
-    print(d)
+with open('t.yaml', encoding='utf-8') as f:
+    d = yaml.safe_load(f)
 
+pprint(d['p1_part01'])
