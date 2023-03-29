@@ -1,19 +1,18 @@
-## ****************************************************************************
-## # table p1 - patrol assignment
-p1_part01 <- Dict$new(
-  "2" = "Spanish Coast",
-  "3" = "British Isles",
-  "4" = "British Isles",
-  "5" = "British Isles",
-  "6" = "British Isles",
-  "7" = "British Isles",
-  "8" = "British Isles",
-  "9" = "British Isles",
-  "10" = "British Isles",
-  "11" = "British Isles",
-  "12" = "West African Coast"
-)
-p1_part02 <- Dict$new(
+# main list with the tables
+- p1_part01: 
+  2: "Spanish Coast"
+  3: "British Isles"
+  4: "British Isles"
+  5: "British Isles"
+  6: "British Isles"
+  7: "British Isles"
+  8: "British Isles"
+  9: "British Isles"
+  10: "British Isles"
+  11: "British Isles"
+  12: "West African Coast"
+    
+- p1_part02:
   "2" = "Spanish Coast",
   "3" = "Norway",
   "4" = "British Isles",
@@ -151,11 +150,6 @@ t_p1_2d6 <- Dict$new(
   "1943-04" = p1_part08,
   "1943-05" = p1_part08,
   "1943-06" = p1_part08
-)
-rm(
-  p1_part01, p1_part02, p1_part03, p1_part04,
-  p1_part05, p1_part06, p1_part07, p1_part08
-)
 
 ## ****************************************************************************
 ## # table e1 - encounter chart
