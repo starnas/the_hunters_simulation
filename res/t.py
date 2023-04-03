@@ -1,7 +1,7 @@
 from pprint import pprint
-import yaml
+import json
 
-with open('t.yaml', encoding='utf-8') as f:
-    d = yaml.safe_load(f)
+with open('tables.json', encoding='utf-8') as f:
+    d = json.load(f)
 
-pprint(d['p1_part01'])
+pprint(d)
