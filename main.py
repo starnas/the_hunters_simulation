@@ -1,4 +1,4 @@
-''' import packages '''
+# import packages
 from res.tables import Tables
 from random import randint
 from pprint import pprint
@@ -10,4 +10,9 @@ def d_6():
     return randint(0, 6)
 
 if __name__ == "__main__":
-    print(Tables.t_p1_2d6)
+
+    # load and format the tables
+    t = Tables('res/tables.json')
+
+    # test for checking the tables
+    print(t.return_table('test'))
