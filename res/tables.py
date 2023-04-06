@@ -16,7 +16,12 @@ class Tables:
             self.tables_raw = json.load(f)
 
         # format table p1
+        for (k in self.tables_raw['t_p1_2d6'].keys()):
 
+            # for each value find corresponding dict
+
+
+            # replace the value with that dict
         # format table
 
         # return formatted tables
@@ -24,4 +29,4 @@ class Tables:
 
     # function to return a given table
     def return_table(self, t):
-        return t
+        return self.tables[t]
