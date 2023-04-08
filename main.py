@@ -21,3 +21,5 @@ if __name__ == "__main__":
 
     # test for checking the tables
     pp.pprint(t.return_table('t_p1_2d6'))
+    pp.pprint(t.return_table('t_e5_1d6'))
+    pp.pprint(t.return_table('t_u2_1d6'))
