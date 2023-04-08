@@ -9,6 +9,7 @@ class Tables:
         self.tables = self.load_tables(table_file)
 
     # function to load tables from file
+    # and to format them
     def load_tables(self, file):
 
         # load the file
@@ -16,13 +17,17 @@ class Tables:
             self.tables_raw = json.load(f)
 
         # format table p1
-        for (k in self.tables_raw['t_p1_2d6'].keys()):
+        for k, v in self.tables_raw['t_p1_2d6'].items():
 
             # for each value find corresponding dict
+            # and replace the value with that dict
+            self.tables_raw['t_p1_2d6'][k] = self.tables_raw['p1_parts'][str(v)]
 
+        # format table e5
 
-            # replace the value with that dict
-        # format table
+        # format table u2
+
+        # remove parts tables
 
         # return formatted tables
         return self.tables_raw
